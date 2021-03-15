@@ -9,19 +9,20 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="#">Gmail</a></li>
-                <li><a class="nav-link" href="#">Images</a></li>
-            </ul>
-
-            <ul>
-                <li>
-                    <img src="/google-homepage/src/apps-24px.svg" alt="apps" />
-                </li>
-                <li><button>Sign in</button></li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#">Gmail</a></li>
+                    <li><a class="nav-link" href="#">Images</a></li>
+                </ul>
+                <img
+                    class="apps"
+                    src="/google-homepage/src/apps-24px.svg"
+                    alt="apps"
+                />
+                <button>Sign in</button>
+            </nav>
+        </header>
 
         <main>
             <div class="logo">
@@ -33,9 +34,15 @@
 
             <div class="search-bar">
                 <input type="search" name="search" class="search" />
+                <div class="icons">
+                    <img src="/google-homepage/src/search.png" alt="search" />
+
+                    <!-- i can't fix this shit :(( -->
+                    <!-- <img src="/google-homepage/src/mic.png" alt="voice">  -->
+                </div>
             </div>
 
-            <div class="lucky">
+            <div class="buttons">
                 <button>Google Search</button>
                 <button>I'm Feeling Lucky</button>
             </div>
@@ -55,6 +62,5 @@
                 <li><a class="nav-link" href="#">Settings</a></li>
             </ul>
         </footer>
-        
     </body>
 </html>

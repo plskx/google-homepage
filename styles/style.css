@@ -1,18 +1,33 @@
-* {
+:root {
+    --color-gray: #70757a;
+}
+
+body {
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    min-height: 50px;
+    font-size: 14px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: black;
+    color: var(--color-gray);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 ul {
     list-style: none;
     margin: 0;
     display: flex;
-    padding-left: 10px;
+    padding-right: 15px;
 }
 
 li {
@@ -21,41 +36,86 @@ li {
 }
 
 nav {
+    margin: 15px;
     display: flex;
     justify-content: flex-end;
 }
 
+.apps {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+nav button {
+    color: white;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
 main {
     margin: 20px;
-    /* background-color: black;  */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.search {
-    padding: 3px;
-    width: 350px;
+.search-bar {
+    margin-top: 30px;
+    position: relative;
 }
 
-.lucky {
+.search {
+    width: 550px;
+    padding: 13px;
+    padding-left: 45px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.buttons {
     margin: 15px;
 }
 
-button {
-    padding: 5px;
+.buttons > button {
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #555;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+}
+
+.buttons button:hover {
+    border: 1px solid #ccc;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    background-color: #af8d8d;
+    min-height: 50px;
+    margin-top: auto;
+    background: #f2f2f2;
 }
 
 footer > ul {
     padding: 10px;
+}
+
+footer .nav-link {
+    color: var(--color-gray);
 }
