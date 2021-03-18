@@ -1,8 +1,10 @@
 :root {
+    --color-black: rgba(0, 0, 0, 0.87);
     --color-gray: #70757a;
 }
 
 body {
+    font-family: "Open Sans", sans-serif;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -12,6 +14,10 @@ body {
 header {
     min-height: 50px;
     font-size: 14px;
+}
+
+nav .nav-link {
+    color: var(--color-black);
 }
 
 .nav-link {
@@ -39,11 +45,20 @@ nav {
     margin: 15px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .apps {
     cursor: pointer;
     padding-right: 10px;
+    filter:grayscale(50%);
+}
+
+.user {
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 nav button {
